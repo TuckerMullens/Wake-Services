@@ -4,7 +4,7 @@ CSC 331 Software Engineering - Wake Services Repo
 Hey everyone here is some general information/an overview of what is contained
 in this repository and how to start development on it!
 
-INSTALLATION:
+# INSTALLATION:
 
 -It is recommended that you use a virtualenv for the packages that you'll need
 for this web app (unless you're using PyCharm, then you don't have to worry about
@@ -31,7 +31,7 @@ PYCHARM USERS
   pip install -r requirements.txt
 
 
-RUNNING THE APP:
+# RUNNING THE APP:
 
 -Open up your terminal/command prompt
 -Start up your virtualenv (don't worry about this step if you're using PyCharm)
@@ -46,7 +46,7 @@ py app.py
 -To stop the app press Ctrl + C in the terminal
 
 
-CONTENTS:
+# CONTENTS:
 
 -------------------------------------------------------------------------------
 templates
@@ -73,4 +73,3 @@ requirements.txt
 A text file containing the 3rd party packages used for the app. This list may
 continue to grow as we start development.
 
-###############################################################################
