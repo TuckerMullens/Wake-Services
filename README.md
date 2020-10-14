@@ -4,7 +4,6 @@ CSC 331 Software Engineering - Wake Services Repo
 Hey everyone here is some general information/an overview of what is contained
 in this repository and how to start development on it!
 
-###############################################################################
 INSTALLATION:
 
 -It is recommended that you use a virtualenv for the packages that you'll need
@@ -31,7 +30,7 @@ PYCHARM USERS
 
   pip install -r requirements.txt
 
-###############################################################################
+
 RUNNING THE APP:
 
 -Open up your terminal/command prompt
@@ -46,7 +45,7 @@ py app.py
 -Then open up your browser to the URL that the terminal displays
 -To stop the app press Ctrl + C in the terminal
 
-###############################################################################
+
 CONTENTS:
 
 -------------------------------------------------------------------------------
