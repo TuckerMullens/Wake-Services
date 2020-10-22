@@ -1,0 +1,22 @@
+Title,Division,Subject,Course
+200-Level Language,LANG,,
+Lifestyles and Health,HES,HES,100
+Exercise for Health and Sports,HES,HES,112
+FYS,FYS,FYS,100
+Writing Seminar,WRI,WRI ,111
+Division I: Humanities,1,,
+Division II: Literatures,2,,
+Division III: Fine Arts,3,,
+Division IV: Social Sciences,4,,
+Division V: Math and Natural Sciences,5,,
+Calculus 2,,MST,112
+Discrete Math,,MST,117
+Linear Algebra,,MST,121
+Intro to Comp. Sci.,,CSC,111
+Fundamentals of Computer Science,,CSC,112
+Data Structures and Algorithms I,,CSC,221
+Data Structure and Algorithms II,,CSC,222
+Programming Languages,,CSC,231
+Computer Systems,,CSC,241
+Computer Organization,,CSC,211
+300-level Computer Science Course,,,

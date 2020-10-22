@@ -1,0 +1,13 @@
+Title,Division,Subject,Course,Hours,CRN,Instructor,Meeting Days,Meeting Times,Grade Mode,Status,Current Capacity,Max. Capacity,Waitlist,Waitlist Max,Description
+Introduction ,CSC,CSC,111,4,579011,David John ,MWF,11:00-11:50,Letter ,Open,24,25,0,10,"Introduction to computer programming and algorithmic problem solving in an object-oriented programming language. Topics include basic control structures, methods, parameters, objects, classes, arrays, and program testing and debugging. Recommended as the first course for students considering a major or minor in computer science."
+Overview of Computer Science,CSC,CSC,101,3,976204,Tucker Mullens,TR,9:00-9:50,Letter ,Open,18,20,0,10,
+Fundamentals of Computer Science ,CSC,CSC,112,4,109202,Sam Cho ,TR,5:00-6:15,Letter ,Open,18,20,0,10,"A study of algorithm development and problem solving using top-down design, data abstraction, object-oriented programming, and program debugging and testing. Topics include memory allocation, recursion, data structures such as arrays, lists, stacks, queues, and trees, simple sorting and searching algorithms, and algorithm complexity."
+Software Engineering,CSC,CSC,331,3,192831,Rob Robless,MW,5:00-6:15,Letter,Open,24,25,0,10,"Study of fundamental topics in software engineering including software processes, agile software development and project management, requirements engineering, system modeling, design patterns and implementation, and software testing. Students practice software engineering principles through team projects."
+Calculus 1,5,MST,111,4,234908,Dr. Carmicheal ,MWF,8:00-9:15am ,letter ,Open,18,18,2,2,
+Calculus 2,5,MST,112,4,167233,Dr. Kirkman ,TR,12:00-1:15pm,letter ,Open,18,18,2,2,
+Linear Algebra ,5,MST,121,4,509881,Dr. Smith ,TTH,11-12:15pm,letter ,Open,18,18,2,2,
+Discrete Math ,5,MST ,117,4,229789,Dr. Moore ,MWF,2:00-2:50pm,letter ,Open,18,18,2,2,
+Western Civilization to 1700,1,HST,101,3,98029,Mike Hughes,TR,11:00AM-12:15PM,letter,Open,25,26,0,3,"Survey of ancient, medieval, and early modern history to 1700. Focus varies with instructor. (CD, D)"
+Literature Interprets the World,2,ENG,150,3,65748,Lamar Wilson,MWF,9:00-9:50,Letter,Open,20,25,2,10,
+Lifestyles and Health,HES,HES,100,3,83474,Milton,TR,3:30-4:45,Letter,Open,35,45,0,10,"A lecture course that deals with the effect of lifestyle behaviors on various health outcomes, including cardiovascular disease, cancer, and sexually-transmitted diseases."
+Exercise for Health and Sports,HES,HES,101,3,93244,Merr,TR,12-1:15,Letter,Open,35,45,0,10,"A laboratory course on physical fitness that covers weight control, cardiovascular endurance, muscular strength, and flexibility."
