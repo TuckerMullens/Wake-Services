@@ -43,8 +43,16 @@ def getMissingDivisionals():
 
 
 def getClassesThatFulfill(division, available):
-    fulfillments = available.loc[available['Division'] == division]
-    return fulfillments
+    if isinstance(division, str):
+        fulfillments = available.loc[available['Division'] == division]
+        return fulfillments
+    elif isinstance(division,list):
+        allFulfillments = pd.DataFrame()
+        for i in range(len(division)):
+            allFulfillments = allFulfillments.append(available.loc[available['Division'] == division[i]])
+
+        return allFulfillments
+
 
 
 def registerCourse(courseName, available, schedule):
@@ -70,7 +78,10 @@ print(missingDivisionals)
 currentSchedule = registerCourse('Introduction ',availableClasses,currentSchedule)
 print(currentSchedule)
 
-toFulfill = getClassesThatFulfill(missingDivisionals[0],availableClasses)
-print(toFulfill)
+toFulfill3 = getClassesThatFulfill(missingDivisionals[0],availableClasses)
+print(toFulfill3)
+
+toFulfillAll = getClassesThatFulfill(missingDivisionals,availableClasses)
+print(toFulfillAll)
 
 
