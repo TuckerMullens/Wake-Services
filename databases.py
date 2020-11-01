@@ -21,12 +21,6 @@ def makeCurrentlyRegistered(availableClasses):
     return df
 
 
-availableClasses = makeAvailableClasses("csvFiles/Class Database - AvailableClasses.csv")
-taken = makeHasTaken("csvFiles/Class Database - HasTaken.csv")
-required = makeRequiredCourses("csvFiles/Class Database - RequiredCourses.csv")
-currentSchedule = makeCurrentlyRegistered(availableClasses)
-print(availableClasses)
-
 def getFulfilledDivisionals():
     q1 = "select Division, sum(Hours) as totalHours from taken group by Division"
     print(ps.sqldf(q1))
@@ -38,7 +32,7 @@ def getMissingDivisionals():
     missing = []
     for i in range(1,6):
         if not (str(i) in listFulfilled):
-            missing.append(i)
+            missing.append(str(i))
     if not('CSC' in listFulfilled):
         missing.append('CSC')
     if not('LANG' in listFulfilled):
@@ -47,5 +41,36 @@ def getMissingDivisionals():
         missing.append('HES')
     return missing
 
+
+def getClassesThatFulfill(division, available):
+    fulfillments = available.loc[available['Division'] == division]
+    return fulfillments
+
+
+def registerCourse(courseName, available, schedule):
+    course = available.loc[available['Title'] == courseName]
+    print(course)
+    newSchedule = schedule.append(course)
+    return newSchedule
+
+
+#instantiates dataframes from excel file
+availableClasses = makeAvailableClasses("csvFiles/Class Database - AvailableClasses.csv")
+taken = makeHasTaken("csvFiles/Class Database - HasTaken.csv")
+required = makeRequiredCourses("csvFiles/Class Database - RequiredCourses.csv")
+
+#just to put identical columns
+currentSchedule = makeCurrentlyRegistered(availableClasses)
+print(availableClasses)
+
+
 missingDivisionals = getMissingDivisionals()
 print(missingDivisionals)
+
+currentSchedule = registerCourse('Introduction ',availableClasses,currentSchedule)
+print(currentSchedule)
+
+toFulfill = getClassesThatFulfill(missingDivisionals[0],availableClasses)
+print(toFulfill)
+
+
