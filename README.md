@@ -8,7 +8,7 @@ in this repository and how to start development on it!
 
 -It is recommended that you use a virtualenv for the packages that you'll need
 for this web app (unless you're using PyCharm, then you don't have to worry about
-installing this).
+using virtualenv).
 -The packages needed for this app are listed in the "requirements.txt" file.
 -NOTE that before you do the installation steps below, you HAVE TO HAVE Python
 as well as pip installed (and virtualenv if you're not using PyCharm), THIS IS
