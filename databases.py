@@ -134,19 +134,70 @@ required = makeRequiredCourses("csvFiles/Class Database - RequiredCourses.csv")
 
 #just to put identical columns
 currentSchedule = makeCurrentlyRegistered(availableClasses)
-#print(availableClasses)
 
 
 missingDivisionals = getMissingDivisionals()
-#print(missingDivisionals)
 
 currentSchedule = registerCourse('Introduction ',availableClasses,currentSchedule)
-#print(currentSchedule)
 
-toFulfill3 = getClassesThatFulfill(missingDivisionals[0],availableClasses)
-#print(toFulfill3)
+toFulfill3 = getClassesThatFulfill('3',availableClasses)
 
-toFulfillAll = getClassesThatFulfill(missingDivisionals,availableClasses)
-#print(toFulfillAll)
+#toFulfillAll = getClassesThatFulfill(missingDivisionals,availableClasses)
 
-getCSCRequirementsLeft(taken)
+
+csReqLeft = getCSCRequirementsLeft(taken)
+result = csReqLeft.to_html()
+# write html to file
+text_file = open("csc_table.html", "w")
+text_file.write(result)
+text_file.close()
+
+
+result = getClassesThatFulfill('3',availableClasses).to_html()
+# write html to file
+text_file = open("fine_arts_table.html", "w")
+text_file.write(result)
+text_file.close()
+
+
+result = getClassesThatFulfill('1',availableClasses).to_html()
+# write html to file
+text_file = open("humanities_table.html", "w")
+text_file.write(result)
+text_file.close()
+
+result = getClassesThatFulfill('2',availableClasses).to_html()
+# write html to file
+text_file = open("literatures_table.html", "w")
+text_file.write(result)
+text_file.close()
+
+
+result = getClassesThatFulfill('4',availableClasses).to_html()
+# write html to file
+text_file = open("social_sciences_table.html", "w")
+text_file.write(result)
+text_file.close()
+
+
+result = getClassesThatFulfill('5',availableClasses).to_html()
+# write html to file
+text_file = open("maths_table.html", "w")
+text_file.write(result)
+text_file.close()
+
+
+result = getClassesThatFulfill(['LANG','HES','FYS'],availableClasses).to_html()
+# write html to file
+text_file = open("basics_table.html", "w")
+text_file.write(result)
+text_file.close()
+
+
+
+
+
+
+
+
+
