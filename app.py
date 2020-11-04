@@ -15,6 +15,13 @@ def hello():
     # This renders the home page defined in the index.html file
     return render_template('index.html')
 
+# This is the DemoPage with the URL "/tables"
+@app.route('/tables')
+def display_table():
+    # Flask automatically looks for html templates in folders named 'templates'
+    # This renders the home page defined in the index.html file
+    return render_template('SampleDGWorksTable.html')
+
 # This is what causes the web app to run
 if __name__ == '__main__':
     app.run(debug=True)

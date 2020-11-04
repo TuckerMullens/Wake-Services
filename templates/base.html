@@ -4,11 +4,30 @@
     <meta charset="utf-8">
     {% block head %} {% endblock %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+    /* Modify the background color of the navbar*/
+
+      .navbar-custom {
+          background-color: #b38600;
+      }
+      /* Modify brand and text color */
+
+      .navbar-custom .navbar-brand,
+      .navbar-custom .navbar-text {
+          color: black;
+      }
+
+      .btn-primary {
+          background-color: #b38600;
+      }
+    </style>
   </head>
 <body>
 
-<nav class="navbar navbar-dark bg-dark">
-<a class="navbar-brand" href="/">Wake Services</a>
+<nav class="navbar navbar-custom">
+<a class="navbar-brand" href="/">
+  <img src = "https://prod.wp.cdn.aws.wfu.edu/sites/73/2017/04/WFU_Univ_H_RGB.gif" height= "100" width= "350">
+</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
 </button>
