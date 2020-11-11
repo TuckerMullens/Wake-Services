@@ -22,6 +22,15 @@ def display_table():
     # This renders the home page defined in the index.html file
     return render_template('SampleDGWorksTable.html')
 
+@app.route('/basics')
+def basics():
+    return render_template('basics_table.html')
+
+@app.route('/csc')
+def csc():
+    return render_template('csc_table.html')
+
+
 # This is what causes the web app to run
 if __name__ == '__main__':
     app.run(debug=True)
