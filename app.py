@@ -26,6 +26,30 @@ def display_table():
 def basics():
     return render_template('basics_table.html')
 
+@app.route('/fineArts')
+def fineArts():
+    return render_template('fine_arts_table.html')
+
+@app.route('/humanities')
+def humanities():
+    return render_template('humanities_table.html')
+
+@app.route('/maths')
+def maths():
+    return render_template('maths_table.html')
+
+@app.route('/socialSciences')
+def socialSciences():
+    return render_template('social_sciences_table.html')
+
+@app.route('/literatures')
+def literatures():
+    return render_template('literatures_table.html')
+
+@app.route('/divisionals')
+def divisionals():
+    return render_template('divisionals.html')
+
 @app.route('/csc')
 def csc():
     return render_template('csc_table.html')
