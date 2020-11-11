@@ -55,6 +55,7 @@ def csc():
     return render_template('csc_table.html')
 
 
+
 # This is what causes the web app to run
 if __name__ == '__main__':
     app.run(debug=True)

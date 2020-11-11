@@ -3,3 +3,12 @@ body {
   font-family: Helvetica;
 
 }
+
+table{
+    border: 2px solid black;
+}
+
+th, td {
+    padding: 5px
+    text-align: left;
+}

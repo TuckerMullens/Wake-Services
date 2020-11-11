@@ -1,7 +1,22 @@
+<!--Necessary Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<!-- Script to activate modal -->
+    <script>
+        var editModal = document.getElementById('RegistrationModal');
+        var editModalButton = document.getElementById('RegistrationButton');
+        editModalButton.onclick = function(){
+            $(editModal).addClass( "is-active" );
+        }
+    </script>
+
 <!-- Button to activate modal -->
-<button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#RegistrationModal">Register</button>
+<button type="button" id="RegistrationButton" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#RegistrationModal">Register</button>
 
 <!-- Modal -->
+{% macro render_modal(courseTitle, division, subject, course, hours, instructor, meetingDays, meetingTimes, courseDescription) -%}
 <div class="modal fade" id="RegistrationModal" tabindex="-1" role="dialog" aria-labelledby="RegistrationModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -12,15 +27,15 @@
         </button>
       </div>
       <div class="modal-body">
-        <div id="courseTitle">COURSE_TITLE</div>
-        <div id="division">DIVISION</div>
-        <div id="subject">SUBJECT</div>
-        <div id="course">COURSE</div>
-        <div id="hours">HOURS</div>
-        <div id="instructor">INSTRUCTOR</div>
-        <div id="meetingDays">MEETING_DAYS</div>
-        <div id="meetingTimes">MEETING_TIMES</div>
-        <div id="courseDescription">COURSE_DESCRIPTION</div>
+        <div id="courseTitle">{{ courseTitle }}</div>
+        <div id="division">{{ division }}</div>
+        <div id="subject">{{ subject }}</div>
+        <div id="course">{{ course }}</div>
+        <div id="hours">{{ hours }}</div>
+        <div id="instructor">{{ instructor }}</div>
+        <div id="meetingDays">{{ meetingDays }}</div>
+        <div id="meetingTimes">{{ meetingTimes }}</div>
+        <div id="courseDescription">{{ courseDescription }}</div>
         <div></div>
       </div>
       <div class="modal-footer">
@@ -30,3 +45,4 @@
     </div>
   </div>
 </div>
+{%- endmacro %}
